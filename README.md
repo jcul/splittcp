@@ -4,6 +4,8 @@ Simple program to split large TCP packets in a pcap into smaller packets.
 
 TCP sequence numbers are updated to reflect the new packet sizes.
 
+**Note**: Only works with Ethernet packets.
+
 ## Build
 
 Depends on libtins and C++11.
