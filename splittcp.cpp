@@ -7,6 +7,11 @@ using namespace Tins;
 
 const size_t LIMIT = 1400;
 
+/* Ethernet only
+ * To add an ethernet layer to a pcap can use tcprewrite, e.g.
+ * tcprewrite --dlt=enet --enet-dmac=00:01:02:03:04:05 --enet-smac=AA:BB:CC:DD:01:00 -i input.pcap  -o output.pcap
+ */
+
 int main(const int c, const char **v) {
     if (c < 3) {
         cout << "Usage: " << v[0] << "input.pcap output.pcap" << endl;
